@@ -14,9 +14,8 @@ document.todo = {
       if (task.includes(filter)){
         filtered.push(document.todo.tasks[i]);
       }
-
-      this.draw(filtered);
     }
+    this.draw(filtered);
   },
 
   draw: function(arr = document.todo.tasks) {
@@ -25,7 +24,7 @@ document.todo = {
     record.innerHTML = ``;
     for (let i = 0; i < arr.length; i++) {
       let TextFromWord = arr[i].text;
-
+      let Index = document.todo.tasks.indexOf(arr[i]);
       if(searchPhrase !== ""){
         const regex = RegExp(`(${searchPhrase})`, 'gi');
         TextFromWord = TextFromWord.replace(regex, `<span class="highlight">$1</span>`)
@@ -37,12 +36,12 @@ document.todo = {
                 <b>${TextFromWord}</b> - <b>${arr[i].date}</b>
              </span>
 
-             <button onclick="document.todo.edit(${i})" class="btn">
-                <img class="delete" src="./assets/pen.png" alt="" >
+             <button onclick="document.todo.edit(${Index})" class="btn">
+                <img class="delete" src="assets/pen.png" alt="" >
              </button>
 
-             <button class="btn" onclick="document.todo.del(${i})" >
-             <img src="./assets/del.png" class="delete" alt="">
+             <button class="btn" onclick="document.todo.del(${Index})" >
+             <img src="assets/del.png" class="delete" alt="">
              </button>
 
         </div>`;
