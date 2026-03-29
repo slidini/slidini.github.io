@@ -3,12 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Imie Nazwisko (00000) - PTW LAB B</title>
+    <title>Olivier Lewandowski (57839) - PTW LAB B</title>
 
     <link rel="stylesheet" href="styles.css" type="text/css">
     <script src="scripts.js" defer></script>
 </head>
+<header>
+    <h1>TO DO LIST</h1>
+</header>
 <body>
+    <div class="container" >
+        <div class="toDo">
+            <form action="scripts.js" method="post" id="search-block">
+                <input type="text" name="search" id="search" placeholder="Tutaj wyszukaj cos co miales zrobic" oninput="document.todo.filter()">
+            </form>
+            <div id="task-list">
 
+
+            </div>
+            <form action="scripts.js" method="post" id="add-record">
+                <input type="text" id="dodaj-text" placeholder="Tutaj wpisz co musisz zrobic..." onfocus="value=''">
+                <input type="button" onclick="buttonAdd()" id="add-submit" class="btn" value="Dodaj"/>
+                <input type="date" id="dodaj-date" value=""/>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
