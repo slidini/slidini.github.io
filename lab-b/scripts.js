@@ -38,11 +38,11 @@ document.todo = {
              </span>
 
              <button onclick="document.todo.edit(${i})" class="btn">
-                <img class="delete" src="/assets/pen.png" >
+                <img class="delete" src="assets/pen.png" >
              </button>
 
              <button class="btn" onclick="document.todo.del(${i})" >
-             <img src="/assets/del.png" class="delete">
+             <img src="assets/del.png" class="delete">
              </button>
 
         </div>`;
