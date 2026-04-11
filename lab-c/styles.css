@@ -1,3 +1,117 @@
-body {
-  background-color: #e6f1fc;
+html{
+  background-color: whitesmoke;
 }
+
+header{
+  font-family: Chalkboard, serif;
+  background-color: gray;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  background-color: white;
+  height: 700px;
+  padding: 10px;
+  width: 700px;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#display{
+
+}
+
+#drag{
+
+}
+
+#drop{
+
+}
+
+.containerText{
+
+}
+
+#map{
+  background-color: black;
+  width: 340px;
+  height: 290px;
+}
+
+#getCurrLocation{
+  width: 200px;
+  height: 20px;
+  padding: 3px;
+}
+
+#getCurrLocation:hover{
+  background-color: gray;
+  color: white;
+}
+
+#saveCurrentMap{
+  width: 150px;
+  height: 20px;
+  padding: 3px;
+}
+
+#saveCurrentMap:hover{
+background-color: gray;
+color: white;
+}
+
+#buttonsGetSave{
+}
+
+#puzzleDragDrop{
+  background-color: black;
+  width: 340px;
+  height: 290px;
+}
+
+#mapSaved{
+  background-color: black;
+  min-height: 180px;
+  min-width: 480px;
+  padding: 10px;
+  display: inline-grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+
+.puzzle{
+  border: 1px solid white;
+  width: 100px;
+  height: 75px;
+}
+
+.dropContainer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 300px;
+  height: 150px;
+  border: 1px solid white;
+}
+
+.fraction{
+  width: 75px;
+  height: 37.5px;
+  border: 1px solid white;
+}
+
