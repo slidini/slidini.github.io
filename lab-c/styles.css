@@ -49,8 +49,10 @@ body{
 
 #buttons{
   margin-top: 3px;
-  height: 28px;
+  height: 70px;
   width: 404px;
+  display: flex;
+  flex-direction: row;
 }
 
 #position{
@@ -87,7 +89,7 @@ body{
 
 #getCurrLocation{
   width: 190px;
-  height: 25px;
+  height: 38px;
   padding: 4px;
 }
 
@@ -98,13 +100,18 @@ body{
 
 #saveCurrentMap{
   width: 190px;
-  height: 25px;
+  height: 38px;
   padding: 4px;
 }
 
 #saveCurrentMap:hover{
 background-color: gray;
 color: white;
+}
+
+
+#drag{
+  margin-top: 90px;
 }
 
 #puzzleDragDrop{
