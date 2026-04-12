@@ -3,6 +3,9 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/
   crossOrigin: true
 }).addTo(map);
 
+
+document.getElementById("getCurrLocation").addEventListener("click", getLocation);
+
 function getLocation(){
   navigator.geolocation.getCurrentPosition(position => {
     let x = position.coords.longitude;
@@ -17,6 +20,9 @@ function getLocation(){
 
 document.getElementById("saveCurrentMap").addEventListener("click", function (){
   document.getElementById("mapSaved").innerHTML = "";
+  document.getElementById("map").innerHTML = "";
+  puzzleDropZone.innerHTML = "";
+
   leafletImage(map, function (err, rasterMapCanvas) {
     let puzzleWidth = rasterMapCanvas.width / 4;
     let puzzleHeight = rasterMapCanvas.height / 4;
@@ -31,10 +37,11 @@ document.getElementById("saveCurrentMap").addEventListener("click", function (){
         puzzlePiece.height = puzzleHeight;
         puzzlePiece.className = "puzzle";
         puzzlePiece.draggable = true;
-        puzzlePiece.id = "piece-" + i + "-" + j;
+        puzzlePiece.id = i + "-" + j;
+        puzzlePiece.style.order = Math.floor(Math.random() * 100);
 
         puzzlePiece.addEventListener("dragstart", function (event){
-          event.dataTransfer.setData("target", event.target.id)
+          event.dataTransfer.setData("target", puzzlePiece.id);
         })
 
         let puzzleContext = puzzlePiece.getContext("2d");
@@ -42,6 +49,11 @@ document.getElementById("saveCurrentMap").addEventListener("click", function (){
           x, y, puzzleWidth, puzzleHeight,
           0, 0, puzzleWidth, puzzleHeight);
         document.getElementById("mapSaved").appendChild(puzzlePiece);
+
+        document.getElementById("puzzleDragDrop").innerHTML += (`
+        <div id="place${i}-${j}" class="dropspots"></div>
+        `);
+
       }
     }
   });
@@ -55,21 +67,51 @@ puzzleDropZone.addEventListener("dragover", function (event) {
 
 puzzleDropZone.addEventListener("drop", function (event) {
   event.preventDefault();
-  let data = event.dataTransfer.getData("target");
-  let piece = document.getElementById(data);
-  event.target.appendChild(piece);
+  let draggedPuzzleId = event.dataTransfer.getData("target");
+  let canvasWithPuzzle = document.getElementById(draggedPuzzleId);
+  console.log(event.target);
+  if(event.target.classList.contains("dropspots") === true){
+    if(event.target.children.length === 0){
+      event.target.appendChild(canvasWithPuzzle);
+    }
+  }else{
+    if(event.target.children.length > 0){
+      alert("miejsce zajete");
+    }
+  }
+
+  let win = true;
+  for(let i = 0; i < 4; i++){
+    for(let j = 0; j < 4; j++){
+      let spaceNumber = document.getElementById("place" + i + "-" + j);
+      if(spaceNumber.children.length !== 0){
+        if(spaceNumber.firstElementChild.id !== i + "-" + j){
+          win = false;
+          console.log("win false wrong place")
+        }
+      }else if (spaceNumber.children.length === 0){
+        win = false;
+        console.log("win false not every puzzle arranged")
+      }
+    }
+  }
+  if(win === true){
+    notifyme("Congratulations, you won!");
+    console.log("win")
+  }
 })
 
 
 
-document.getElementById("Notif").addEventListener("click", notifyme)
+document.getElementById("Notif").addEventListener("click", notifyme);
 
-async function notifyme() {
-  if (Notification.permission === "granted"){
-    const NewNotification = new Notification("Good job!");
-  }else if(Notification.permission === "denied"){
+async function notifyme(notificationText) {
+  if (Notification.permission === "default") {
     await Notification.requestPermission();
-    const NewNotification = new Notification("Good job!");
   }
-
+  if(Notification.permission === "granted") {
+    await new Notification("Puzzle game", {body: notificationText});
+  }
 }
+
+

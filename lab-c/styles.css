@@ -22,41 +22,73 @@ body{
 
 .container{
   background-color: white;
-  height: 700px;
+  height: auto;
   padding: 10px;
-  width: 700px;
+  width: 1000px;
   flex-direction: row;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  box-shadow: 10px 5px 5px dimgray;
 }
 
 #display{
 
 }
 
-#drag{
+.left-side{
+  margin-right: 30px;
+  margin-left: 75px;
+}
 
+.right-side{
 }
 
 #drop{
+  margin-bottom: 48px;
+}
 
+#buttons{
+  margin-top: 3px;
+  height: 28px;
+  width: 404px;
+}
+
+#position{
+  background-color: white;
+  border: 1px solid black;
+  width: 404px;
+  height: 304px;
+  padding: 5px;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.coords{
+  border: 1px solid black;
+  width: 300px;
+  height: 60px;
+  font-weight: bold;
+  font-size: 50px;
 }
 
 .containerText{
-
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
 }
 
 #map{
   background-color: black;
-  width: 340px;
-  height: 290px;
+  width: 404px;
+  height: 304px;
 }
 
 #getCurrLocation{
-  width: 200px;
-  height: 20px;
-  padding: 3px;
+  width: 190px;
+  height: 25px;
+  padding: 4px;
 }
 
 #getCurrLocation:hover{
@@ -65,9 +97,9 @@ body{
 }
 
 #saveCurrentMap{
-  width: 150px;
-  height: 20px;
-  padding: 3px;
+  width: 190px;
+  height: 25px;
+  padding: 4px;
 }
 
 #saveCurrentMap:hover{
@@ -75,29 +107,32 @@ background-color: gray;
 color: white;
 }
 
-#buttonsGetSave{
-}
-
 #puzzleDragDrop{
   background-color: black;
-  width: 340px;
-  height: 290px;
+  width: 404px;
+  height: 304px;
 }
 
 #mapSaved{
-  background-color: black;
-  min-height: 180px;
-  min-width: 480px;
-  padding: 10px;
+  background-color: white;
+  border: 1px solid black;
+  min-height: 304px;
+  min-width: 404px;
+  padding: 5px;
   display: inline-grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1em;
+  gap: 1px;
 }
 
 .puzzle{
-  border: 1px solid white;
+  border: 1px solid black;
   width: 100px;
   height: 75px;
+}
+
+.puzzle:hover{
+  opacity: 75%;
+  cursor: grab;
 }
 
 .dropContainer{
@@ -113,5 +148,12 @@ color: white;
   width: 75px;
   height: 37.5px;
   border: 1px solid white;
+}
+
+.dropspots{
+  background-color: white;
+  border: 1px solid gray;
+  width: 101px;
+  height: 76px;
 }
 

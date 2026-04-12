@@ -19,38 +19,42 @@
 <body>
 
 <div class="container">
-    <div id="display">
-        <p class="containerText">MAP DISPLAY:</p>
-        <div id="map"></div>
+    <div class="left-side">
+
+        <div id="display">
+            <p class="containerText">MAP DISPLAY:</p>
+            <div id="map"></div>
+        </div>
+
+        <div id="buttons">
+            <button id="getCurrLocation">GET CURRENT LOCATION</button>
+            <button id="saveCurrentMap" >SAVE CURRENT MAP</button>
+        </div>
+
+        <div>
+            <p class="containerText">YOUR POSITION:</p>
+            <div id="position">
+                <p id="x" class="coords">X</p>
+                <p id="y" class="coords">Y</p>
+            </div>
+        </div>
+
     </div>
 
-    <div id="drop">
-        <p class="containerText">DROP HERE:</p>
-        <div id="puzzleDragDrop" class="dropContainer">
+<div class="right-side">
+        <div id="drop">
+            <p class="containerText">DROP HERE:</p>
+            <div id="puzzleDragDrop" class="dropContainer">
+            </div>
+        </div>
 
+        <div id="drag">
+            <p class="containerText">DRAG FROM HERE:</p>
+            <div id="mapSaved"></div>
         </div>
     </div>
-
-    <div>
-        <button id="getCurrLocation" onclick="getLocation()">GET CURRENT LOCATION</button>
-        <button id="saveCurrentMap" >SAVE CURRENT MAP</button>
-    </div>
-
-    <div id="drag">
-        <p class="containerText">DRAG FROM HERE:</p>
-        <div id="mapSaved"></div>
-    </div>
-
 </div>
-
-<div id="position">
-    <p>Your position:</p>
-    <p id="x">X</p>
-    <p id="y">Y</p>
-</div>
-
-<button id="Notif">Notify me</button>
-
+<button id="Notif">notify me</button>
 </body>
 <footer>
 
