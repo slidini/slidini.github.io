@@ -1,3 +1,73 @@
 body {
   background-color: #e6f1fc;
+  font-family: Chalkboard, serif;
 }
+
+.containter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#Search{
+  gap: 2px;
+  display: flex;
+  background-color: whitesmoke;
+  width: 500px;
+  height: 150px;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+}
+
+#cityCountry {
+  width: 200px;
+  height: 20px;
+  border: 1px solid;
+}
+
+.Button{
+  background-color: whitesmoke;
+  color: gray;
+  width: 120px;
+  height: 24px;
+  border: 1px solid;
+}
+
+.Button:hover{
+  background-color: gray;
+  color: whitesmoke;
+  transition: color 500ms;
+}
+
+.tempBlock{
+  width: 330px;
+  height: 120px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  margin: 2px;
+  padding: 3px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+#weatherInfo{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 3px;
+  justify-content: center;
+}
+
+#currentTemperature{
+  width: 300px;
+  height: 500px;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  text-align: center;
+  font-weight: bold;
+}
+
