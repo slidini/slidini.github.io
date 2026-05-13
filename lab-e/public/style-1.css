@@ -1,3 +1,9 @@
+.buttons {
+  width: 15px;
+  height: 15px;
+  text-align: center;
+}
+
 .content{
   display: flex;
   height: 90%;
@@ -64,7 +70,7 @@ header {
 body {
   color: rgb(0, 0, 0);
   font-family: 'Arial', sans-serif;
-  background-image: url("assets/style1/paperbg.webp");
+  background-image: url("/public/style1/paperbg.webp");
 }
 
 footer {

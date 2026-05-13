@@ -1,3 +1,9 @@
+.buttons {
+  width: 15px;
+  height: 15px;
+  text-align: center;
+}
+
 body {
   color: rgb(26,32,44);
   background: linear-gradient(135deg, rgb(240,255,255) 0%, rgb(211,255,255) 100%);
