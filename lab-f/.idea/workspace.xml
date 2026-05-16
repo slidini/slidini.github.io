@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="13ae59b4-0b69-4609-88c8-0a75ef2a1955" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../lab-e/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-e/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-e/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-e/public/style1/Civ6Culture.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-e/public/style1/Civ6Gold.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-e/public/style1/Civ6Science.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-e/public/style1/Civ6StrengthIcon.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-e/public/style1/Housing6.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-e/public/style1/civilizations.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-e/public/style1/footprints.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-e/public/style1/paperbg.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-e/public/style1/summary.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpinfo.php" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="PHP File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="PhpDebugGeneral">
+    <xdebug_debug_ports port="9003" />
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="6be1fee7-c9f3-4b18-a8ee-bdb718a9e7f9" name="localhost" port="8000" />
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="$PROJECT_DIR$/../../../../../../../php/php.exe" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3DnmgVmh3lmUibYfWf5iAPwIPfK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "PHP Script.phpinfo.php.executor": "Debug",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/olitr/OneDrive/Obrazy/git/slidini.github.io/lab-f",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php.debug",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\olitr\OneDrive\Obrazy\git\slidini.github.io\lab-f\styles" />
+      <recent name="C:\Users\olitr\OneDrive\Obrazy\git\slidini.github.io\lab-f" />
+      <recent name="C:\Users\olitr\OneDrive\Obrazy\git\slidini.github.io\lab-f\templates" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-PS-261.23567.149" />
+        <option value="bundled-php-predefined-a98d8de5180a-022fa7b8ab75-com.jetbrains.php.sharedIndexes-PS-261.23567.149" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="13ae59b4-0b69-4609-88c8-0a75ef2a1955" name="Changes" comment="" />
+      <created>1778926323733</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1778926323733</updated>
+      <workItem from="1778926326294" duration="27310000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
