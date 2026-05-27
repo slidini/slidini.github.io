@@ -3,6 +3,7 @@ namespace App\Controller;
 
 use App\Exception\NotFoundException;
 use App\Model\Post;
+use App\Model\Wheels;
 use App\Service\Router;
 use App\Service\Templating;
 

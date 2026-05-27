@@ -42,6 +42,35 @@ switch ($action) {
         $controller = new \App\Controller\InfoController();
         $view = $controller->infoAction();
         break;
+    case 'wheels-index':
+        $controller = new \App\Controller\WheelsController();
+        $view = $controller->indexAction($templating, $router);
+        break;
+    case 'wheels-create':
+        $controller = new \App\Controller\WheelsController();
+        $view = $controller->createAction($_REQUEST['wheel'] ?? null, $templating, $router);
+        break;
+    case 'wheels-edit':
+        if (! $_REQUEST['id']) {
+            break;
+        }
+        $controller = new \App\Controller\WheelsController();
+        $view = $controller->editAction($_REQUEST['id'], $_REQUEST['wheel'] ?? null, $templating, $router);
+        break;
+    case 'wheels-show':
+        if (! $_REQUEST['id']) {
+            break;
+        }
+        $controller = new \App\Controller\WheelsController();
+        $view = $controller->showAction($_REQUEST['id'], $templating, $router);
+        break;
+    case 'wheels-delete':
+        if (! $_REQUEST['id']) {
+            break;
+        }
+        $controller = new \App\Controller\WheelsController();
+        $view = $controller->deleteAction($_REQUEST['id'], $router);
+        break;
     default:
         $view = 'Not found';
         break;
