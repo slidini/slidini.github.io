@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Wheels{% endblock %}
+
+{% block body %}
+
+    {{ include('wheels/_form.html.twig') }}
+
+    <a href="{{ path('app_wheels_index') }}" class="btn btn-secondary">back to list</a>
+{% endblock %}

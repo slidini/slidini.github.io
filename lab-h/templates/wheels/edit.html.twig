@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Wheels{% endblock %}
+
+{% block body %}
+
+    {{ include('wheels/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_wheels_index') }}" class="btn btn-secondary">back to list</a>
+
+    {{ include('wheels/_delete_form.html.twig') }}
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Wheels index{% endblock %}
+
+{% block body %}
+
+    <table class="table table-dark table-striped table-hover">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Brand</th>
+                <th>Size</th>
+                <th>Color</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for wheel in wheels %}
+            <tr>
+                <td>{{ wheel.id }}</td>
+                <td>{{ wheel.brand }}</td>
+                <td>{{ wheel.size }}</td>
+                <td>{{ wheel.color }}</td>
+                <td>
+                    <a href="{{ path('app_wheels_show', {'id': wheel.id}) }}" class="btn btn-secondary">show</a>
+                    <a href="{{ path('app_wheels_edit', {'id': wheel.id}) }}" class="btn btn-secondary">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_wheels_new') }}" class="btn btn-primary">Create new</a>
+{% endblock %}
