@@ -1,0 +1,10 @@
+{
+	"name": "hello",
+	"version": "1.0.0",
+	"type": "module",
+	"dependencies": {
+		"ejs": "^5.0.2",
+		"express": "^5.2.1",
+		"prettier": "^3.8.3"
+	}
+}
