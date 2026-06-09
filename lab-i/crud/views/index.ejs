@@ -1,11 +1,16 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<%- include('header') %>
+<h1>Wheels List</h1>
+
+<a href="/wheels/create">Create new</a>
+
+<ul class="index-list">
+    <% wheels.forEach(wheel => { %>
+        <li><h3><%= wheel.brand %></h3>
+            <ul class="action-list">
+                <li><a href="/wheels/<%= wheel.id %>">Details</a></li>
+                <li><a href="/wheels/<%= wheel.id %>/edit">Edit</a></li>
+            </ul>
+        </li>
+    <% }) %>
+</ul>
+<%- include('footer') %>

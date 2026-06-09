@@ -20,10 +20,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(lessMiddleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.get('/favicon.ico', (req, res) => res.status(204).end());
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/wheels', wheelsRouter);
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

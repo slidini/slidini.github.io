@@ -1,0 +1,10 @@
+<%- include('header') %>
+<h1>Make: <%= wheel.brand %></h1>
+<article>
+    Size: <%= wheel.size %> | Color: <%= wheel.color %>
+</article>
+<ul class="action-list">
+    <li><a href="/wheels">Back to list</a></li>
+    <li><a href="/wheels/<%= wheel.id %>/edit">Edit</a></li>
+</ul>
+<%- include('footer') %>
