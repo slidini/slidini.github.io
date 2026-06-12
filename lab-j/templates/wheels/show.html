@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Make: {{ wheel['brand'] }}{% endblock %}
+{% block body_class %}show{% endblock %}
+
+{% block content %}
+    <h1>Make: {{ wheel['brand'] }}</h1>
+    <article>
+        {{ wheel['size'] }}
+        {{ wheel['color'] }}
+    </article>
+
+    <ul class="action-list">
+        <li> <a href="{{ url_for('wheels_index') }}">Back to list</a></li>
+        <li><a href="{{ url_for('wheels_edit', id=wheel['id']) }}">Edit</a></li>
+    </ul>
+{% endblock %}

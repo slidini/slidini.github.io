@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Wheels List{% endblock %}
+{% block body_class %}index{% endblock %}
+
+{% block content %}
+    <h1>Wheels List</h1>
+
+    <a href="{{ url_for('wheels_create') }}">Create new</a>
+
+    <ul class="index-list">
+        {% for wheel in wheels %}
+            <li><h3>{{ wheel['brand'] }} - {{ wheel['size'] }} - {{ wheel['color'] }}</h3>
+                <ul class="action-list">
+                    <li><a href="{{ url_for('wheels_show', id=wheel['id']) }}">Details</a></li>
+                    <li><a href="{{ url_for('wheels_edit', id=wheel['id']) }}">Edit</a></li>
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
